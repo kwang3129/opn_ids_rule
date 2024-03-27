@@ -5,3 +5,4 @@
 #
 
 # -- User defined rules
+pass ip   192.168.200.156  any ->  172.15.6.33  any (msg:"TEST RULE"; bypass; sid:4294967294; rev:1;)
