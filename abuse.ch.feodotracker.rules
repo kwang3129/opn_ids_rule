@@ -1,6 +1,6 @@
 ################################################################
 # abuse.ch Feodo Tracker Suricata / Snort Ruleset              #
-# Last updated: 2024-04-04 07:03:03 UTC                        #
+# Last updated: 2024-04-05 07:03:47 UTC                        #
 #                                                              #
 # Terms Of Use: https://feodotracker.abuse.ch/blocklist/       #
 # For questions please contact feodotracker [at] abuse.ch      #
@@ -33,4 +33,5 @@ alert tcp $HOME_NET any -> [194.233.91.144] 5000 (msg:"Feodo Tracker: potential 
 alert tcp $HOME_NET any -> [158.220.95.215] 5242 (msg:"Feodo Tracker: potential Pikabot CnC Traffic detected"; threshold: type limit, track by_src, seconds 60, count 1; classtype:trojan-activity; reference:url, feodotracker.abuse.ch/browse/host/158.220.95.215/; sid:900513653; rev:1;)
 alert tcp $HOME_NET any -> [84.247.157.112] 13783 (msg:"Feodo Tracker: potential Pikabot CnC Traffic detected"; threshold: type limit, track by_src, seconds 60, count 1; classtype:trojan-activity; reference:url, feodotracker.abuse.ch/browse/host/84.247.157.112/; sid:900513654; rev:1;)
 alert tcp $HOME_NET any -> [172.233.221.61] 5938 (msg:"Feodo Tracker: potential Pikabot CnC Traffic detected"; threshold: type limit, track by_src, seconds 60, count 1; classtype:trojan-activity; reference:url, feodotracker.abuse.ch/browse/host/172.233.221.61/; sid:900513655; rev:1;)
-# END 27 entries
+alert tcp $HOME_NET any -> [172.233.155.253] 2078 (msg:"Feodo Tracker: potential Pikabot CnC Traffic detected"; threshold: type limit, track by_src, seconds 60, count 1; classtype:trojan-activity; reference:url, feodotracker.abuse.ch/browse/host/172.233.155.253/; sid:900513656; rev:1;)
+# END 28 entries
