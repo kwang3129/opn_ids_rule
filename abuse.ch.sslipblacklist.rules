@@ -43,5 +43,4 @@ alert tcp $HOME_NET any -> [118.195.235.103] 4782 (msg:"SSLBL: Traffic to malici
 alert tcp $HOME_NET any -> [147.185.221.18] 56901 (msg:"SSLBL: Traffic to malicious host (likely OrcusRAT C&C traffic)"; flow:established,to_server; threshold: type limit, track by_src, seconds 60, count 1; classtype:trojan-activity; sid:904200034; rev:1;)
 alert tcp $HOME_NET any -> [45.134.83.165] 7707 (msg:"SSLBL: Traffic to malicious host (likely AsyncRAT C&C traffic)"; flow:established,to_server; threshold: type limit, track by_src, seconds 60, count 1; classtype:trojan-activity; sid:904200035; rev:1;)
 alert tcp $HOME_NET any -> [20.117.169.244] 80 (msg:"SSLBL: Traffic to malicious host (likely AsyncRAT C&C traffic)"; flow:established,to_server; threshold: type limit, track by_src, seconds 60, count 1; classtype:trojan-activity; sid:904200036; rev:1;)
-alert tcp $HOME_NET any -> [193.26.115.138] 4782 (msg:"SSLBL: Traffic to malicious host (likely QuasarRAT C&C traffic)"; flow:established,to_server; threshold: type limit, track by_src, seconds 60, count 1; classtype:trojan-activity; sid:904200037; rev:1;)
-# END (38) entries
+# END (37) entries
