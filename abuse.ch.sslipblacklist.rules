@@ -34,8 +34,5 @@ alert tcp $HOME_NET any -> [51.142.10.24] 80 (msg:"SSLBL: Traffic to malicious h
 alert tcp $HOME_NET any -> [45.91.226.131] 1145 (msg:"SSLBL: Traffic to malicious host (likely DCRat C&C traffic)"; flow:established,to_server; threshold: type limit, track by_src, seconds 60, count 1; classtype:trojan-activity; sid:904200025; rev:1;)
 alert tcp $HOME_NET any -> [46.246.84.18] 1128 (msg:"SSLBL: Traffic to malicious host (likely AsyncRAT C&C traffic)"; flow:established,to_server; threshold: type limit, track by_src, seconds 60, count 1; classtype:trojan-activity; sid:904200026; rev:1;)
 alert tcp $HOME_NET any -> [103.211.56.154] 14782 (msg:"SSLBL: Traffic to malicious host (likely QuasarRAT C&C traffic)"; flow:established,to_server; threshold: type limit, track by_src, seconds 60, count 1; classtype:trojan-activity; sid:904200027; rev:1;)
-alert tcp $HOME_NET any -> [154.30.255.175] 8887 (msg:"SSLBL: Traffic to malicious host (likely AsyncRAT C&C traffic)"; flow:established,to_server; threshold: type limit, track by_src, seconds 60, count 1; classtype:trojan-activity; sid:904200028; rev:1;)
-alert tcp $HOME_NET any -> [185.196.10.24] 8808 (msg:"SSLBL: Traffic to malicious host (likely OrcusRAT C&C traffic)"; flow:established,to_server; threshold: type limit, track by_src, seconds 60, count 1; classtype:trojan-activity; sid:904200029; rev:1;)
-alert tcp $HOME_NET any -> [154.27.70.229] 56002 (msg:"SSLBL: Traffic to malicious host (likely PureLogStealer C&C traffic)"; flow:established,to_server; threshold: type limit, track by_src, seconds 60, count 1; classtype:trojan-activity; sid:904200030; rev:1;)
-alert tcp $HOME_NET any -> [94.156.8.83] 4785 (msg:"SSLBL: Traffic to malicious host (likely Rhadamanthys C&C traffic)"; flow:established,to_server; threshold: type limit, track by_src, seconds 60, count 1; classtype:trojan-activity; sid:904200031; rev:1;)
-# END (32) entries
+alert tcp $HOME_NET any -> [94.156.8.83] 4785 (msg:"SSLBL: Traffic to malicious host (likely Rhadamanthys C&C traffic)"; flow:established,to_server; threshold: type limit, track by_src, seconds 60, count 1; classtype:trojan-activity; sid:904200028; rev:1;)
+# END (29) entries
