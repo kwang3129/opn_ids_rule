@@ -33,6 +33,4 @@ alert tcp $HOME_NET any -> [94.156.8.44] 4787 (msg:"SSLBL: Traffic to malicious 
 alert tcp $HOME_NET any -> [217.63.234.90] 1313 (msg:"SSLBL: Traffic to malicious host (likely QuasarRAT C&C traffic)"; flow:established,to_server; threshold: type limit, track by_src, seconds 60, count 1; classtype:trojan-activity; sid:904200024; rev:1;)
 alert tcp $HOME_NET any -> [91.92.243.85] 56001 (msg:"SSLBL: Traffic to malicious host (likely PureLogStealer C&C traffic)"; flow:established,to_server; threshold: type limit, track by_src, seconds 60, count 1; classtype:trojan-activity; sid:904200025; rev:1;)
 alert tcp $HOME_NET any -> [194.62.248.64] 56001 (msg:"SSLBL: Traffic to malicious host (likely PureLogStealer C&C traffic)"; flow:established,to_server; threshold: type limit, track by_src, seconds 60, count 1; classtype:trojan-activity; sid:904200026; rev:1;)
-alert tcp $HOME_NET any -> [45.157.69.156] 443 (msg:"SSLBL: Traffic to malicious host (likely OrcusRAT C&C traffic)"; flow:established,to_server; threshold: type limit, track by_src, seconds 60, count 1; classtype:trojan-activity; sid:904200027; rev:1;)
-alert tcp $HOME_NET any -> [172.94.105.163] 2222 (msg:"SSLBL: Traffic to malicious host (likely AsyncRAT C&C traffic)"; flow:established,to_server; threshold: type limit, track by_src, seconds 60, count 1; classtype:trojan-activity; sid:904200028; rev:1;)
-# END (29) entries
+# END (27) entries
