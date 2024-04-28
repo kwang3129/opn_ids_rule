@@ -7,9 +7,7 @@
 ################################################################
 #
 alert tcp $HOME_NET any -> [192.9.135.73] 1194 (msg:"Feodo Tracker: potential Pikabot CnC Traffic detected"; threshold: type limit, track by_src, seconds 60, count 1; classtype:trojan-activity; reference:url, feodotracker.abuse.ch/browse/host/192.9.135.73/; sid:900512344; rev:1;)
-alert tcp $HOME_NET any -> [103.82.243.5] 13785 (msg:"Feodo Tracker: potential Pikabot CnC Traffic detected"; threshold: type limit, track by_src, seconds 60, count 1; classtype:trojan-activity; reference:url, feodotracker.abuse.ch/browse/host/103.82.243.5/; sid:900513611; rev:1;)
 alert tcp $HOME_NET any -> [158.220.95.214] 5243 (msg:"Feodo Tracker: potential Pikabot CnC Traffic detected"; threshold: type limit, track by_src, seconds 60, count 1; classtype:trojan-activity; reference:url, feodotracker.abuse.ch/browse/host/158.220.95.214/; sid:900513648; rev:1;)
-alert tcp $HOME_NET any -> [64.23.199.206] 1194 (msg:"Feodo Tracker: potential Pikabot CnC Traffic detected"; threshold: type limit, track by_src, seconds 60, count 1; classtype:trojan-activity; reference:url, feodotracker.abuse.ch/browse/host/64.23.199.206/; sid:900513649; rev:1;)
 alert tcp $HOME_NET any -> [172.232.208.90] 2223 (msg:"Feodo Tracker: potential Pikabot CnC Traffic detected"; threshold: type limit, track by_src, seconds 60, count 1; classtype:trojan-activity; reference:url, feodotracker.abuse.ch/browse/host/172.232.208.90/; sid:900513650; rev:1;)
 alert tcp $HOME_NET any -> [213.199.41.33] 13721 (msg:"Feodo Tracker: potential Pikabot CnC Traffic detected"; threshold: type limit, track by_src, seconds 60, count 1; classtype:trojan-activity; reference:url, feodotracker.abuse.ch/browse/host/213.199.41.33/; sid:900513651; rev:1;)
 alert tcp $HOME_NET any -> [194.233.91.144] 5000 (msg:"Feodo Tracker: potential Pikabot CnC Traffic detected"; threshold: type limit, track by_src, seconds 60, count 1; classtype:trojan-activity; reference:url, feodotracker.abuse.ch/browse/host/194.233.91.144/; sid:900513652; rev:1;)
@@ -23,4 +21,4 @@ alert tcp $HOME_NET any -> [62.204.41.234] 2222 (msg:"Feodo Tracker: potential Q
 alert tcp $HOME_NET any -> [77.105.162.176] 995 (msg:"Feodo Tracker: potential QakBot CnC Traffic detected"; threshold: type limit, track by_src, seconds 60, count 1; classtype:trojan-activity; reference:url, feodotracker.abuse.ch/browse/host/77.105.162.176/; sid:900513660; rev:1;)
 alert tcp $HOME_NET any -> [38.180.142.98] 443 (msg:"Feodo Tracker: potential QakBot CnC Traffic detected"; threshold: type limit, track by_src, seconds 60, count 1; classtype:trojan-activity; reference:url, feodotracker.abuse.ch/browse/host/38.180.142.98/; sid:900513661; rev:1;)
 alert tcp $HOME_NET any -> [45.85.117.76] 443 (msg:"Feodo Tracker: potential QakBot CnC Traffic detected"; threshold: type limit, track by_src, seconds 60, count 1; classtype:trojan-activity; reference:url, feodotracker.abuse.ch/browse/host/45.85.117.76/; sid:900513662; rev:1;)
-# END 17 entries
+# END 15 entries
